@@ -21,7 +21,7 @@ router.get('/', function (req, res, next) {
     }
 
 
-    Anuncio.find(filter).sort(sort).tags(arr).exec(function(err, anuncios){
+    Anuncio.find(filter).sort(sort).where('precio').gte(10).lte(50).exec(function(err, anuncios){
        if (err){
            next(err);
            return;
