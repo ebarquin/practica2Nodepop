@@ -6,11 +6,22 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Usuario = mongoose.model('Usuario');
 
-var usuario1 = new Usuario({nombre: 'Eugenio', email: 'info@info.net', clave:'1234'});
+//Podemos crear nuevos usuarios mediante un método post
 
-usuario1.save(function(err, usuarioGuardado){
-    console.log(err, usuarioGuardado);
+router.post('/', function(req, res){
+
+    var usuario = new Usuario(req.body);
+
+    usuario.save(function(err, usuarioGuardado){
+        if (err){
+            next (err);
+            return;
+        }
+        res.json({success: true, usuario: usuarioGuardado});
+    });
+
 });
+
 
 
 module.exports = router;
