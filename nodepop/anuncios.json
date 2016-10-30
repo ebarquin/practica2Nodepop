@@ -3,7 +3,7 @@
     {
       "nombre": "Bicicleta",
       "venta": true,
-      "precio": 230.15,
+      "precio": 50.00,
       "foto": "bici.jpg",
       "tags":["lifestyle", "motor"]
     },
@@ -22,11 +22,11 @@
       "tags":["lifestyle", "mobile"]
     },
     {
-      "nombre": "MacBook Pro 13",
+      "nombre": "Macbook Pro",
       "venta": false,
-      "precio": 1200.00,
+      "precio": 30.15,
       "foto": "macbook.jpg",
-      "tags":["work", "motor"]
+      "tags":["work", "mobile"]
     }
   ],
   "usuarios":[
