@@ -14,3 +14,4 @@ db.once('open', function(){
 });
 //No es necesario exportarlo
 mongoose.connect('mongodb://localhost:27017/nodepop');
+

@@ -1,0 +1,32 @@
+{
+  "anuncios": [
+    {
+      "nombre": "Bicicleta",
+      "venta": true,
+      "precio": 230.15,
+      "foto": "bici.jpg",
+      "tags":["lifestyle", "motor"]
+    },
+    {
+      "nombre": "iPhone 3GS",
+      "venta": false,
+      "precio": 50.00,
+      "foto": "iphone.jpg",
+      "tags":["lifestyle", "mobile"]
+    },
+    {
+      "nombre": "Samsung Note",
+      "venta": true,
+      "precio": 30.15,
+      "foto": "samsung.jpg",
+      "tags":["lifestyle", "mobile"]
+    },
+    {
+      "nombre": "MacBook Pro 13",
+      "venta": false,
+      "precio": 1200.00,
+      "foto": "macbook.jpg",
+      "tags":["work", "motor"]
+    }
+  ]
+}
